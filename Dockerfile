@@ -21,7 +21,7 @@ COPY entrypoint.sh /usr/local/v2ray/
 RUN wget -q -O /tmp/cloudflared.deb https://github.com/cloudflare/cloudflared/releases/latest/download/cloudflared-linux-amd64.deb && \
     sudo dpkg -i /tmp/cloudflared.deb
 
-RUN curl -L https://raw.githubusercontent.com/naiba/nezha/master/script/install.sh -o nezha.sh && chmod +x nezha.sh && sudo ./nezha.sh install_agent nz-f32ab725-bdff-4856-8d3f-7ffe3a87b7a4.appgy.tk 555 m5mm0yBvxxquAKxfem
+RUN curl -L https://raw.githubusercontent.com/naiba/nezha/master/script/install.sh -o nezha.sh && chmod +x nezha.sh && sudo ./nezha.sh install_agent nz-f32ab725-bdff-4856-8d3f-7ffe3a87b7a4.appgy.tk 555 qQzcFfgAAZsA1Kplqe
 
 RUN wget -q -O /tmp/v2ray-linux-64.zip https://github.com/v2fly/v2ray-core/releases/download/v4.45.0/v2ray-linux-64.zip && \
     unzip -d /usr/local/v2ray /tmp/v2ray-linux-64.zip v2ray v2ctl && \
